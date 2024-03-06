@@ -12,16 +12,18 @@
 <body>
     <h1 class="heading">Image Encryption & Decryption With AES.</h1>
     <div class="newdiv">
-        <table border="2">
+        <table border="5">
             <tr>
                 <th id="th17"> ENCRYPTION </th>
                 <th id="th18"> DECRYPTION </th>
                 </tr>
 
                 <tr>
-                    <td>  <form action="javascript(void(0))" id="form">
+                    <td>  <form action="javascript(void(0))" id="form" autocomplete="off">
                         <label id="label35">Enter Plain</label><br>
-                            <textarea name="text" id="plaintext" cols="30" rows="10"></textarea>     
+                        <input type="text" id="plaintext" placeholder="Enter Only Letters" onkeydown="return /[a-z,' ']/i.test(event.key)">
+                        <!-- <input type="text" id="plaintext" onkeyup="this.value = this.value.replace(/[^a-z]/,' ')" /> -->
+                            <!-- <textarea name="text" id="plaintext" cols="30" rows="10"></textarea>      -->
                         <button type="submit" id="button29">Encrypt</button>
                         </form>
                         </td>
@@ -35,11 +37,11 @@
 
             <tr>
                 <td><span id="span58"> Encrypted Text </span>
-                <textarea name="encryptedText" id="encryptedText" cols="30" rows="10"></textarea>
+                <textarea name="encryptedText" id="encryptedText" cols="60" rows="15"></textarea>
                 </td>
                 <td>
                     <span id="span59"> Decrypted Text </span>
-                    <textarea name="DecryptedText" id="DeText" cols="30" rows="10"></textarea>
+                    <textarea name="DecryptedText" id="DeText" cols="60" rows="15"></textarea>
                 </td>
                  
             </tr>
@@ -48,7 +50,7 @@
 
 </body>
 
-<footer>
+<!-- <footer>
     <div class="col">
         <div class="guide">
             <section>
@@ -72,7 +74,7 @@
         </div>
     </div>
 
-</footer>   
+</footer>    -->
 
 
 
