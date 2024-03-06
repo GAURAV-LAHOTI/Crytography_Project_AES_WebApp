@@ -32,11 +32,11 @@ let decrypt = (text, shift) => {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     let plaintext = text.value;
-    encryptedtext.value = encrypt(plaintext, 5);
+    encryptedtext.value = encrypt(plaintext, 13);
 })
 
 form2.addEventListener('submit', (event) => {
     event.preventDefault();
     let passwd = encryptedtext.value;
-    decryptedText.value = decrypt(passwd, 5);
+    decryptedText.value = decrypt(passwd, 13);
 })
